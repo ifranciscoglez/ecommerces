@@ -1,0 +1,33 @@
+/* 
+	Title: es_XC/country.css
+	Author Name: Cynthia Chu
+	Author Date: 2007-07-23
+	Description: Exclusive and redefined rules for es_XC for SRD.
+*/
+p.greendotnote {margin:2em 16em 6em !important;padding-left:none !important;}
+div#page div.mobile span#pwdres2.helpweak span.pscTooltip, div#stdpage div#main span#pwdres2.helpweak span.pscTooltip {padding-left: 45px;}
+div#page div.mobile span#pwdres2.helpfair span.pscTooltip, div#stdpage div#main span#pwdres2.helpfair span.pscTooltip{padding-left:35px;}
+div#page div.mobile span#pwdres2.helpstrong span.pscTooltip, div#stdpage div#main span#pwdres2.helpstrong span.pscTooltip{padding-left:70px;}
+
+ul#gfeAggressive label.gfeAggressiveLabelClass {width:56px; padding:5px 5px 0;}
+
+/* Spec50732-VOC */
+.VOCAccountLimits .verifiedTop {padding-top: 107px;}
+
+.VOCGetVerify #main .layout3 .col.threeBox p.alignFirstButton, .VOCGetVerify #main p.alignLastButton {
+    margin-top: 56px;
+    text-align: center;
+}
+
+.VOCGetVerify #main .layout3 .col.twoBox p.alignFirstButton, .VOCGetVerify #main .layout3 .col.last.box.adjustTwoBox p.alignLastButton  {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.VOCAccountLimits .htIncThreeBox {height: 31em;}
+
+.VOCAccountLimits .layout3 div.col div.threeBox {height: 36.1em;}
+
+.VOCAccountLimits .layout3 div.col div.verifiedThreeBox {height: 39em;}
+
+.VOCAccountLimits .borderLine .alignFixed {height: 2.1em;}
