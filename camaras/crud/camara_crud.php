@@ -29,6 +29,11 @@ if(isset($_SESSION['usuario'])){
 		<script src="peticion_camara.js"></script>
 		
   </head>
+  <style>
+body {
+background: #F3E5F5;
+}
+</style>
   <body>
 
     <header>
@@ -58,15 +63,15 @@ if(isset($_SESSION['usuario'])){
                             <h2 class="text-primary text-center"><small><i class="fa fa-plus"></i></small>&nbsp;&nbsp;Agregar nuevas camara</h2>
                             <form role="form" action="guardar_producto.php" method="post" enctype="multipart/form-data">
                               <div class="form-group">
-                                <label>Código Camara</label>
+                                <label>Código</label>
                                 <input type="text" class="form-control"  placeholder="Código" required maxlength="30" name="codigo-camaras">
                               </div>
                               <div class="form-group">
-                                <label>Modelo Camara</label>
-                                <input type="text" class="form-control"  placeholder="Nombre de la gafa" required maxlength="45" minlength="5" name="modelo-camaras">
+                                <label>Modelo</label>
+                                <input type="text" class="form-control"  placeholder="Nombre" required maxlength="45" minlength="5" name="modelo-camaras">
                               </div>
                              <div class="form-group">
-                                <label>Descripción Camara</label>
+                                <label>Descripción</label>
                                 <input type="text" class="form-control"  placeholder="Descripción de las caracteristicas" required minlength="100" name="descrip-camara">
                               </div>
                               
@@ -76,7 +81,7 @@ if(isset($_SESSION['usuario'])){
                               </div>
                             <div class="form-group">
                                 <label>Color</label>
-                                <input type="text" class="form-control"  placeholder="Color de la gafa" maxlength="100" name="color-camara">
+                                <input type="text" class="form-control"  placeholder="Color" maxlength="100" name="color-camara">
                               </div>
                               
                               <div class="form-group">

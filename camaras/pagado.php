@@ -45,7 +45,7 @@ if(isset($_SESSION['carrito'] && isset($_SESSION['usuario-cliente']))
     
     
 
-var_dump($resultado);
+
 
 ?>
 

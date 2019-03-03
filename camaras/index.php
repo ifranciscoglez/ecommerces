@@ -46,7 +46,7 @@ background: #F3E5F5;
        <header class="jumbotron my-4">
         <h1 class="display-3">Bienvenidos!</h1>
         <p class="lead">Bienvenidos a Camaras instanx, donde encontraras las mas hermosas y mejores camaras instantaneas.</p>
-        <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
+        
       </header>
     <h1 class="text-center p-2">PRODUCTOS </h1>
     

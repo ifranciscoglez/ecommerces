@@ -54,6 +54,7 @@ if(isset($_SESSION['carrito']))
     
 while ($fila = $consul->fetch_row()) {
     $idCliente = $fila[0];
+    printf $fila[0];
 }
             
     $sql = "INSERT INTO pedido (fechaPedido, subTotalPedido, totalPedido, estadoPedido,
@@ -89,8 +90,7 @@ while ($fila = $consul->fetch_row()) {
 <?php 
        
         include "conexion.php";
-        session_start();
-        if(empty($_SESSION['usuario-cliente'])){
+        if(isset($_SESSION['usuario-cliente'])){
              include 'views/cabecera_cliente.php';
         }else{
 

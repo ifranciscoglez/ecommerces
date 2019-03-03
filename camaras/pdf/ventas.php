@@ -54,7 +54,7 @@ $pdf->cell(25,15,  utf8_decode($row['totalPedido']), 1, 0, 'L', 1);
 //$pdf->cell(16,15,  utf8_decode($row['precioEnvioPedido']), 1, 0, 'L', 1);
 $pdf->cell(30,15,  utf8_decode($row['estadoPedido']), 1, 0, 'L', 1);
 $pdf->cell(30,15,  utf8_decode($row['TipoPago_idTipoPago']), 1, 0, 'L', 1);
-$pdf->cell(50,15,  utf8_decode($row['Cliente_idCliente']), 1, 0, 'L', 1);
+$pdf->cell(50,15,  utf8_decode($row['Cliente_idCliente']), 1, 1, 'L', 1);
                 
   }
             

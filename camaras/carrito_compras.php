@@ -3,6 +3,9 @@
 session_start();
 
 include 'conexion.php';
+
+if(isset($_SESSION['usuario-cliente'])){            
+
 if(isset($_SESSION['carrito']))
 {
     if(isset($_GET['id']))
@@ -75,7 +78,9 @@ if(isset($_SESSION['carrito']))
 
     
 }
-
+}else{
+    header('Location: login_cliente.php');
+}
 ?>
 <!doctype html>
 <html lang="es">
@@ -98,7 +103,10 @@ if(isset($_SESSION['carrito']))
   <body>
 
     <header>
-         <?php include 'views/cabecera.php';?>
+        <?php        
+          
+          include 'views/cabecera_cliente.php';
+        ?>
     </header>
 
     <main role="main">

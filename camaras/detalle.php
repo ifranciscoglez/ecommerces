@@ -19,16 +19,17 @@
   <body>
 
     <header>
-         <?php 
+         <?php        
+         include "conexion.php";
         session_start();
 
         if(isset($_SESSION['usuario-cliente'])){            
           include 'views/cabecera_cliente.php';
 
         }else{
-            include 'views/cabecera.php';?>
+            include 'views/cabecera.php';
         }
-        
+        ?>
     </header>
 
     <main role="main">

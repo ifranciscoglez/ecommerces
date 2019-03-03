@@ -24,6 +24,11 @@ if(isset($_SESSION['usuario'])){
      <link href="../css/bootstrap.min.css" rel="stylesheet">
 
   </head>
+  <style>
+body {
+background: #F3E5F5;
+}
+</style>
   <body>
 
     <header>

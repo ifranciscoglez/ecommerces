@@ -63,7 +63,7 @@ $pdf->cell(16,15,  utf8_decode($row['estadoCliente']), 1, 0, 'L', 1);
 $pdf->cell(16,15,  utf8_decode($row['ciudadCliente']), 1, 0, 'L', 1);
 $pdf->cell(20,15,  utf8_decode($row['coloniaCliente']), 1, 0, 'L', 1);
 $pdf->cell(26,15,  utf8_decode($row['direccionCliente']), 1, 0, 'L', 1);
-$pdf->cell(6,15,  utf8_decode($row['numExtCliente']), 1, 0, 'L', 1);
+$pdf->cell(6,15,  utf8_decode($row['numExtCliente']), 1, 1, 'L', 1);
 //$pdf->cell(6,15,  utf8_decode($row['numInteCliente']), 1, 1, 'L', 1);
                 
   }     

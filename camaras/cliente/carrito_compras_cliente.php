@@ -183,7 +183,7 @@ if(isset($_SESSION['carrito']))
             if($total!=0){?>
                
               
-                <a href="paypal/comprar.php?total=<?php echo $total; ?>" class="btn btn-primary">Comprar ahora</a>
+                <a href="../paypal/comprar.php?total=<?php echo $total; ?>" class="btn btn-primary">Comprar ahora</a>
                 
              <?php
             }

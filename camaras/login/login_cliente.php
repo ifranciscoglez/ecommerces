@@ -10,13 +10,13 @@ if (isset($_SESSION['usuarioCliente'])){
 $usuarioCl = $_POST['usuario-cliente'];
 $contrasenaCl = $_POST['contrasena-cliente'];
 
-$sql = "select usuarioCliente, contrasenaCliente from cliente where usuarioCliente= '$usuarioCl' AND 
- 					contrasenaCliente= '$contrasenaCl'";
+$sql = "select usuarioCliente, passwordCliente from cliente where usuarioCliente= '$usuarioCl' AND 
+ 					passwordCliente= '$contrasenaCl'";
 $resultado = $mysqli->query($sql);
 
- while($rowPoseido = $resultado->fetch_array(MYSQLI_ASSOC)) {
+ while($row = $resultado->fetch_array(MYSQLI_ASSOC)) {
             $arreglo[]=array('usuarioCliente'=>$row['usuarioCliente'],
-			'contrasenaCliente'=>$row['contrasenaCliente']);
+			'passwordCliente'=>$row['passwordCliente']);
  }
 
 	if(isset($arreglo)){

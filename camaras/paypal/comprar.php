@@ -1,6 +1,6 @@
 <?php
 //Concepto de compra
-$concepto = "Camaras Instax";
+$concepto = "Compra en Camaras Instax";
 
 //URL's de retorno
 $regreso   = "http://elizaloezadiaz.tk/pagos/exitoso.php";

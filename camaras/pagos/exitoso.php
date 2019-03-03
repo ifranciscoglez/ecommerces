@@ -1,6 +1,4 @@
 
-
-
 <?php
 
 require '../conexion.php';
@@ -27,10 +25,10 @@ if(isset($_SESSION['carrito']))
        $nombreCl = $usuario[$i]['usuarioCliente']; 
     }
     
-    $usuario = "select idCliente from cliente where nombreCliente = '$nombreCl'";
+    $usuario = "select idCliente from cliente where nombreCliente = '$nombreCl' limit 1";
     $consul = $mysqli->query($usuario);
         
-    while ($fila = $consul->fetch_row()) {
+    while ($fila = $consul->fetch_array(MYSQLI_ASSOC)) {
         $idCliente = $fila['idCliente'];
     }
 
@@ -44,7 +42,7 @@ if(isset($_SESSION['carrito']))
     
     $sql = "INSERT INTO pedido (fechaPedido, subTotalPedido, totalPedido, precioEnvioPedido, estadoPedido,
     TipoPago_idTipoPago, Cliente_idCliente) VALUES ('$fecha_hoy', '$subtotal', '$total', '$envio', '$status', '$tipoPago', $idCliente)";
-	$resultad = $mysqli->query($sql);
+	$resultado = $mysqli->query($sql);
     
 }
 
@@ -73,7 +71,7 @@ if(isset($_SESSION['carrito']))
 		<div class="container">
 			<div class="row">
 				<div class="row" style="text-align:center">
-					<?php if($save) { ?>
+					<?php if($resultado) { ?>
                         <!-- Modal -->
                         <div class="modal fade" id="eliminarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog" role="document">
@@ -88,8 +86,7 @@ if(isset($_SESSION['carrito']))
                                 La compra se ha realizado con exito. 
                               </div>
                               <div class="modal-footer">
-                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <a class="btn btn-primary" href="../pdf/ticket.php">Aceptar</a>
+                              <a class="btn btn-primary" href="../pdf/ticket.php">Imprimir comprobante</a>
                               </div>
                             </div>
                           </div>

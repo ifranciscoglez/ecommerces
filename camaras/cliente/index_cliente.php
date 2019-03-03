@@ -21,7 +21,7 @@ if(isset($_SESSION['usuario-cliente'])){
     <meta name="author" content="">
    
 
-    <title>Gafas</title>
+    <title>Camaras instax</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="../css/font-awesome.css">
     	
@@ -69,7 +69,7 @@ if(isset($_SESSION['usuario-cliente'])){
                   <p class="card-text"><?php echo $row['extractoDescripCamaras']; ?></p>
                 </div>
                 <div class="card-footer">
-                  <a href="./detalle.php?id=<?php echo $row['idCamaras']; ?>" class="btn btn-primary">Ver mas</a>
+                  <a href="../detalle.php?id=<?php echo $row['idCamaras']; ?>" class="btn btn-primary">Ver mas</a>
                 </div>
               </div>
             </div>
