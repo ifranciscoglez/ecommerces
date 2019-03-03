@@ -1,0 +1,7 @@
+/*.custom-file-control:lang(es)::after {
+  content: "Choose file...";
+}
+
+.custom-file-control:lang(es)::before {
+  content: "Browse";
+}*/
