@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli('mysql.hostinger.mx', 'u199251046_root', 'rootadmin', 'u199251046_cams');
+$mysqli = new mysqli('localhost', 'uroot', 'proot', 'bdcams');
 
 
 mysqli_set_charset($mysqli, 'utf8');
